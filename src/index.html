@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Trivia</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="init">
+        <div class="nes-container with-title is-centered">
+            <p class="title">¡Create your quest!</p>
+            <div class="form-group">
+                <label for="default_select">Select Your Enemy:</label>
+                    <div class="nes-select">
+                        <select class="default_select" id="Category">
+                            <option>Any Enemy</option>
+                        </select>
+                </div>
+                <label for="default_select">Select Difficulty:</label>
+                <div class="nes-select">
+                <select class="default_select" id="Difficulty">
+                    <option>Any Difficulty</option>
+                    <option>Easy</option>
+                    <option>Medium</option>
+                    <option>Hard</option>
+                </select>
+                </div>
+                <label for="default_select">Select Type:</label>
+                <div class="nes-select">
+                <select class="default_select" id="Type">
+                    <option>Any Type</option>
+                    <option>Multiple Choise</option>
+                    <option>True/False</option>
+                </select>
+                </div>
+            </div>
+            <button type="button" class="nes-btn is-success" id="initButton">Iniciar</button>
+        </div>
+    </form>
+   
+    <section id="question">
+        
+    </section>
+    <section>
+        <dialog class="nes-dialog is-rounded" id="dialog-rounded">
+          <form method="dialog">
+            <h2 class="title">You Win!!</h2>
+            <menu class="dialog-menu">
+              <button class="nes-btn is-primary">Confirm</button>
+            </menu>
+          </form>
+        </dialog>
+      </section>
+    <section>
+        <dialog class="nes-dialog is-dark is-rounded" id="dialog-dark-rounded">
+          <form method="dialog">
+            <h2 class="title">Your journey ends here</h2>
+            <menu class="dialog-menu">
+              <button class="nes-btn is-primary">Continue</button>
+            </menu>
+          </form>
+        </dialog>
+      </section>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+</body>
+</html>

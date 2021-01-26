@@ -1,0 +1,36 @@
+@mixin content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    background-color: #f5f6fa;
+}
+body{
+    font-family: 'Press Start 2P', cursive;
+    background-color:#dfe6e9;
+}
+
+ul{
+    list-style: none;
+    li:hover{
+        color: blue;
+        cursor:pointer; cursor: hand;
+    }
+}
+#init{
+ @include content;
+}
+#question{
+    @include content;
+}
+.dialog-menu{
+    padding-left: 40%;
+}
+/* .answerContainer{
+    display: flex;
+    flex-direction: row;
+}
+.arrowSelect{
+ height: 20px;
+} */
